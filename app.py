@@ -15,7 +15,6 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 #create sqlalchemy object for your flask app
 db=SQLAlchemy(app)
 
-
 #create a model for the database
 class Data(db.Model):
     __tablename__="data" #create table
@@ -27,7 +26,6 @@ class Data(db.Model):
     def __init__(self,email_,height_):
         self.email_=email_
         self.height_=height_
-
 
 @app.route('/')
 def index():
