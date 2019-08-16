@@ -57,6 +57,7 @@ def success():
     return render_template("index.html",
     text="email already exist, try again!")
 
+
 if __name__ == '__main__':
     app.debug=True
     app.run(port=5001)
